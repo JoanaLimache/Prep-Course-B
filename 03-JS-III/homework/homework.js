@@ -34,17 +34,29 @@ function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+  var elevarNum = [];
+  for(let i = 0; i <= array.length - 1; i++){
+    elevarNum.push(Math.pow(array[i], 2))
+  }
+  return elevarNum;
 }
 
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
+  var sumandoAndo = 0;
+  for(let i = 0; i <= array.length - 1; i++){
+    var sumandoAndo = sumandoAndo + array[i];
+  }
+  return sumandoAndo;
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
+  let digitosNum = num.toString();
+  return (digitosNum.length);
 }
   
   
