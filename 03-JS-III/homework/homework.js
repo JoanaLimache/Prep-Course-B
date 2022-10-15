@@ -8,12 +8,26 @@ function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
+    var sumar=0;
+    for (var i = 1; i < 11; i++){
+      sumar= sumar + i;
+
+    }
+    return sumar;
 }
 
 function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
+  var parArray = [];
+  for(let i = 0; i <= array.length; i++){
+    var restoArray = array[i] % 2;
+    if(restoArray === 0){
+       parArray.push(array[i]);
+    }
+  }
+  return parArray;
 }
 
 function elevaAlCuadrado(array){
